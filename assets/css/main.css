@@ -4986,6 +4986,10 @@ a img {
     margin: 10px
 }
 
+.fade {
+    opacity:0;
+}
+
 .user {
     text-align: center;
     font-size: 60px;

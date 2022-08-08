@@ -33,6 +33,11 @@
   </head>
 
   <body>
+    <div>
+      <a href="#particles-js" class="up" data-scroll style="animation:none;color:#232323;position:fixed;bottom:5%;right:-3%;height:20px;width:250px;">
+        <i class="icon fa fa-chevron-up" aria-hidden="true" id="upscroll"></i>
+      </a>
+    </div>
     <div id="particles-js">
       <div class="header">
         <h1>
@@ -68,7 +73,7 @@
       <!-- User Introduction-->
       <div class="revealme">
         <div class="user-details">
-          <h1>A Bit About Me</h1>
+          <h1 style="margin-top:.5em">A Bit About Me</h1>
           <picture>
           <source
             type="image/webp"
@@ -83,13 +88,11 @@
       </div>
       <div style="margin:1em 0; font-size:113%;" class="revealme">
         <p>
-          Hi &#128075 I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern.
-          I am currently pursuing a Master's degree in Applied Data Science from the University of Michigan. I primarily focus on building data pipelines, R Shiny applications, 
-          and data visualizations surrounding the game of basketball. Passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects 
-          <span> <a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji">&#128071</a></span>
+          Hi &#128075 I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern University.
+          I am currently pursuing a master's degree in Applied Data Science from the University of Michigan. I primarily focus on building data pipelines, R Shiny applications, 
+          and data visualizations surrounding the game of basketball. I'm passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects 
+          <span> <a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji" data-scroll>&#128071</a></span>
         </p>
-<!-- 
-          <a class="header-links" href="#projects" data-scroll>&#11015</a> -->
       </div>
     </div>
       <!-- User Specifics -->
@@ -119,146 +122,39 @@
         </div>
       </div>
       </div>
+      <hr style="border-top: 1px solid #232323;">
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
       <div>
-        <h1>Featured Projects</h1>
+        <h1 align="center" style="margin-top:.25em" class="revealme">Featured Projects</h1>
       </div>
-
-      <!-- User Project #1: Personal Résumé Website -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp" alt="Personal Website" />
-            <img alt="Personal Website" src="./assets/img/jpg/Personal-Resume-Website.jpg" />
-          </picture>
+      <div class="user-projects" id="left-swipe" style="margin-bottom: 1em">
+        <div class="images-right" style="margin-top: -3%;">
+            <img src="./assets/img/coach_challenge.png"/>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>Personal Website</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
-              style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
-            />
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          </div>
-          <p style="text-align: justify">
-            I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase my web
-            presence, story, work experience, education, projects, and achievements in an interactive and
-            visually-appealing format.
+          <h3 style="font-size:21px; text-align:left">&#128680 Win Probability & NBA Coach's Challenges</h3>
+          <p style="text-align:-webkit-auto;">
+            I investigated the quantitative side of NBA coach's challenges by calculating the win probability differences between the true outcome and the "counterfactual" outcome. I summarized my findings in an R Shiny app, along with an interactive table to allow the user to explore my database of NBA 2020-21 regular season coaching challenges.
           </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/">Check it out!</a>
+          <a class="project-link" target="_blank" href="https://mbanalytics.shinyapps.io/Coach-Challenge/">Project Link</a>
         </div>
       </div>
 
-      <!-- User Project #2: Summer 2020 Project -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" />
-            <img alt="Perpetual Crusades" src="./assets/img/jpg/Perpetual-Crusades.jpg" />
-          </picture>
+      <div class="user-projects" id="right-swipe">
+
+         <div class="images-left" style="margin-top: -3%;">
+            <img src="./assets/img/hot_hand.png"/>
         </div>
         <div class="contents-right" style="text-align: center">
-          <h3>Perpetual Crusades</h3>
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-            style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
-            style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          <p style="text-align: justify">
-            I created a two-player online dice-based board game with a theme loosely set around Dungeons & Dragons. It
-            was developed as a submission for Penn Apps XXI, using ReactJS and CSS Grid Layouts for design and hosted on
-            GitHub Pages.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Summer-2020-Project"
-            >Check it out!</a
-          >
-        </div>
-      </div>
+          <h3 style="font-size: 21px; text-align: left;">&#128293 The Hot Hand & SportVU Data</h3>
+          <p style="text-align:-webkit-auto;">
+            I created two different tools to visualize the potential effects of the Hot Hand in an R Shiny app. The first allows the user to create shot charts of NBA player efficiency changes amidst hot or cold streaks on 1.2 million shots from the 2015-21 seasons. The second is an interactive table that incoporates raw x-y tracking data on the 2014-16 seasons from SportVU, to split streaks by closest defender distances.          </p>
+          <a class="project-link" target="_blank" href="https://mbanalytics.shinyapps.io/Tracking-Hot-Hand/"
+            >Project Link</a>
 
-      <!-- User Project #3: COVID-19 Tracker App -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/COVID19-Tracker-App.webp" alt="COVID-19 Tracker App" />
-            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/COVID19-Tracker-App.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>COVID-19 Tracker App</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
-              style="filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I created a web application for tracking the spread of COVID-19. Using Johns Hopkins University Center For
-            Systems Science and Engineering API, the website processes the COVID-19 data to create statistical
-            projections through graphs and charts.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/covid19-tracker-app">
-            Check it out!
-          </a>
-        </div>
-      </div>
-
-      <!-- Use Project #4: Valuto: Account Management System -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/webp/Valuto-Account-Management.webp"
-              alt="Valuto: Account Management System"
-            />
-            <img alt="Valuto: Account Management System" src="./assets/img/jpg/Valuto-Account-Management.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Valuto: Account Management System</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg"
-              style="filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I developed a CLI system for accounting management and financial statement maintenance. The purpose of the
-            system is to maintain a record of the funds received, used, disseminated and donated by an organization.
-            Details of transactions and maintenance of a budget and tallying of current balance/inventory in cash/kind
-            is incorporated in this system.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Valuto-Account-Management-System">
-            Check it out!
-          </a>
         </div>
       </div>
     </section>
@@ -275,6 +171,8 @@
     <script>
       ScrollReveal().reveal('.revealme', { delay: 50, easing: 'ease-in-out'});
       ScrollReveal().reveal('.user', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '90px'});
+      ScrollReveal().reveal('#left-swipe', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '120px'});
+      ScrollReveal().reveal('#right-swipe', { delay: 60, easing: 'ease-in-out', origin: 'right', distance: '120px'});
     </script>
   </body>
 </html>

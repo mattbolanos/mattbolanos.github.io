@@ -317,6 +317,33 @@ template {
     margin: 20px;
 }
 
+
+.wave {
+     /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .wave-animation {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: 1;  /* Never stop waving :) */
+    transform-origin: 70% 70%; 
+  }
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 svg text {
     font-family: "FontAwesome";
 }
@@ -452,10 +479,21 @@ a img {
 .shaded-text:hover {
     text-decoration: underline;;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .shaded-emoji {
     text-decoration: none;
+}
+
+.shaded-emoji:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.shaded-emoji:hover {
+    transform: translate(-50%, -50%);
 }
 
 .header-links .link {

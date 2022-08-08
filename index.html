@@ -88,7 +88,7 @@
       </div>
       <div style="margin:1em 0; font-size:113%;" class="revealme">
         <p>
-          Hi &#128075 I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern University.
+          Hi <span class="wave">&#128075</span> I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern University.
           I am currently pursuing a master's degree in Applied Data Science from the University of Michigan. I primarily focus on building data pipelines, R Shiny applications, 
           and data visualizations surrounding the game of basketball. I'm passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects 
           <span> <a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji" data-scroll>&#128071</a></span>
@@ -130,7 +130,7 @@
       <div>
         <h1 align="center" style="margin-top:.25em" class="revealme">Featured Projects</h1>
       </div>
-      <div class="user-projects" id="left-swipe" style="margin-bottom: 1em">
+      <div class="user-projects" id="left-swipe" style="margin-bottom: 2em">
         <div class="images-right" style="margin-top: -3%;">
             <img src="./assets/img/coach_challenge.png"/>
         </div>
@@ -167,6 +167,24 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const square = entry.target.querySelector('.wave');
+
+          if (entry.isIntersecting) {
+            square.classList.add('wave-animation');
+            return; // if we added the class, exit the function
+          }
+
+          // We're not intersecting, so remove the class!
+          square.classList.remove('wave-animation');
+        });
+      });
+
+      observer.observe(document.querySelector('.revealme'));
+
+    </script>
     <!-- Scroll -->
     <script>
       ScrollReveal().reveal('.revealme', { delay: 50, easing: 'ease-in-out'});

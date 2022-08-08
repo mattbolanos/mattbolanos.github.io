@@ -406,9 +406,30 @@ a img {
     margin: 10px
 }
 
+.link:hover{
+    text-decoration: underline;
+}
+
+.shaded-text {
+    text-decoration: none;
+    color: #555555;
+    background-color: rgb(255, 222, 52, .5);
+
+}
+
+.shaded-text:hover {
+    text-decoration: underline;;
+    font-weight: 900;
+}
+
+.shaded-emoji {
+    text-decoration: none;
+
+
+}
+
 .header-links .link {
     color: #fff;
-    text-decoration: none;
     font-size: 15px;
     margin: 10px
 }

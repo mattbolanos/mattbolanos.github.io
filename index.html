@@ -64,7 +64,7 @@
 
     <!-- About Section -->
     <section id="about">
-      <hr style="height:10px; visibility:hidden;"/>
+      <hr style="height:0px; visibility:hidden;"/>
       <!-- User Introduction-->
       <div class="revealme">
         <div class="user-details">
@@ -81,12 +81,15 @@
           />
         </picture>
       </div>
-      <div>
-        <p style="margin:1em 0; font-size:113%;" class="revealme">
+      <div style="margin:1em 0; font-size:113%;" class="revealme">
+        <p>
           Hi &#128075 I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern.
           I am currently pursuing a Master's degree in Applied Data Science from the University of Michigan. I primarily focus on building data pipelines, R Shiny applications, 
-          and data visualizations surrounding the game of basketball.
+          and data visualizations surrounding the game of basketball. Passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects 
+          <span> <a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji">&#128071</a></span>
         </p>
+<!-- 
+          <a class="header-links" href="#projects" data-scroll>&#11015</a> -->
       </div>
     </div>
       <!-- User Specifics -->
@@ -271,6 +274,7 @@
     <!-- Scroll -->
     <script>
       ScrollReveal().reveal('.revealme', { delay: 50, easing: 'ease-in-out'});
+      ScrollReveal().reveal('.user', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '90px'});
     </script>
   </body>
 </html>

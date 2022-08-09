@@ -34,7 +34,7 @@
 
   <body>
     <div>
-      <a href="#particles-js" class="up" data-scroll style="animation:none;color:#232323;position:fixed;bottom:5%;right:-3%;height:20px;width:250px;">
+      <a href="#particles-js" class="up" id="up" data-scroll style="animation:none;color:#232323;position:fixed;bottom:5%;right:-3%;height:20px;width:250px;">
         <i class="icon fa fa-chevron-up" aria-hidden="true" id="upscroll"></i>
       </a>
     </div>
@@ -90,8 +90,7 @@
         <p>
           Hi <span class="wave">&#128075</span> I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern University.
           I am currently pursuing a master's degree in Applied Data Science from the University of Michigan. I primarily focus on building data pipelines, R Shiny applications, 
-          and data visualizations surrounding the game of basketball. I'm passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects 
-          <span> <a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji" data-scroll>&#128071</a></span>
+          and data visualizations surrounding the game of basketball. I'm passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects <span><a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji" data-scroll>&#128071</a></span>
         </p>
       </div>
     </div>
@@ -127,34 +126,49 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <div>
-        <h1 align="center" style="margin-top:.25em" class="revealme">Featured Projects</h1>
+      <div style="text-align:center">
+        <h1 align="center" style="margin-top:1%" class="revealme">Featured Projects</h1>
+        <div style="margin-top:-1.5%; margin-bottom: 2%;">
+          <a class="full-list" href="projects_page/index.html">Full List of Projects
+            <span class="full-list"> &#11013</span>
+          </a>
+        </div>
       </div>
-      <div class="user-projects" id="left-swipe" style="margin-bottom: 2em">
-        <div class="images-right" style="margin-top: -3%;">
+      <div class="user-projects" id="left-swipe" style="margin-bottom: 2%">
+        <div class="images-right" style="margin-top: -2%;">
             <img src="./assets/img/coach_challenge.png"/>
         </div>
         <div class="contents" style="text-align: center">
-          <h3 style="font-size:21px; text-align:left">&#128680 Win Probability & NBA Coach's Challenges</h3>
-          <p style="text-align:-webkit-auto;">
+          <div style="text-align: left">
+            <h3>&#128680 <span>
+              <a style="font-size:21px; text-align:left; color: #555555; margin-top: 1em; line-height: 1.25;" 
+              target="_blank" href="https://mbanalytics.shinyapps.io/Coach-Challenge/" class="project-title">Win Probability & NBA Coach's Challenges
+            </a>
+          </span>
+          </h3>
+          </div>
+          <p style="text-align:-webkit-auto; margin-top: -2%;">
             I investigated the quantitative side of NBA coach's challenges by calculating the win probability differences between the true outcome and the "counterfactual" outcome. I summarized my findings in an R Shiny app, along with an interactive table to allow the user to explore my database of NBA 2020-21 regular season coaching challenges.
           </p>
-          <a class="project-link" target="_blank" href="https://mbanalytics.shinyapps.io/Coach-Challenge/">Project Link</a>
         </div>
       </div>
-
       <div class="user-projects" id="right-swipe">
-
-         <div class="images-left" style="margin-top: -3%;">
+         <div class="images-left" style="margin-top: -2.5%;">
             <img src="./assets/img/hot_hand.png"/>
         </div>
         <div class="contents-right" style="text-align: center">
-          <h3 style="font-size: 21px; text-align: left;">&#128293 The Hot Hand & SportVU Data</h3>
+          <div style="text-align: left;">
+            <h3>&#128293 <span>
+              <a style="font-size:21px; text-align:left; color: #555555; margin-top: 1em; line-height: 1.25;" 
+              target="_blank" href="https://mbanalytics.shinyapps.io/Tracking-Hot-Hand/" class="project-title">The Hot Hand & SportVU Data
+            </a>
+          </span>
+          </h3>
+          </div>
           <p style="text-align:-webkit-auto;">
-            I created two different tools to visualize the potential effects of the Hot Hand in an R Shiny app. The first allows the user to create shot charts of NBA player efficiency changes amidst hot or cold streaks on 1.2 million shots from the 2015-21 seasons. The second is an interactive table that incoporates raw x-y tracking data on the 2014-16 seasons from SportVU, to split streaks by closest defender distances.          </p>
-          <a class="project-link" target="_blank" href="https://mbanalytics.shinyapps.io/Tracking-Hot-Hand/"
-            >Project Link</a>
-
+            I created two different tools to visualize the potential effects of the Hot Hand in an R Shiny app. The first allows the user to create shot charts of NBA player efficiency changes amidst hot or cold streaks on 1.2 million shots from the 2015-21 seasons. The second is an interactive table that incoporates raw x-y tracking data on the 2014-16 seasons from SportVU, to split streaks by closest defender distances.</p>
+<!--           <a class="project-link" target="_blank" href="https://mbanalytics.shinyapps.io/Tracking-Hot-Hand/">Go to App</a>
+ -->
         </div>
       </div>
     </section>
@@ -167,18 +181,22 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <!-- Waving hand on wake-up -->
     <script>
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const square = entry.target.querySelector('.wave');
 
-          if (entry.isIntersecting) {
+          var count = 0
+
+          if (entry.isIntersecting && count == 0) {
             square.classList.add('wave-animation');
+            count = count + 1
             return; // if we added the class, exit the function
           }
 
           // We're not intersecting, so remove the class!
-          square.classList.remove('wave-animation');
+          // square.classList.remove('wave-animation');
         });
       });
 

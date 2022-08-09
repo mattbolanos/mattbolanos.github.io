@@ -61,7 +61,7 @@
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
           <a class="link" target="_blank" href="files/Matthew.Bolanos.Resume.pdf">Resume</a>
-          <a class="link" href="/projects_page/">Projects</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
         </div>
       </div>
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -127,12 +127,12 @@
     <!-- Projects Section -->
     <section id="projects">
       <div style="text-align:center">
-        <h1 align="center" style="margin-top:1%" class="revealme">Featured Projects</h1>
-        <div style="margin-top:-1.5%; margin-bottom: 2%;">
+        <h1 align="center" style="margin-top:1%;">Featured Projects</h1>
+  <!--       <div style="margin-top:-1.5%; margin-bottom: 2%;">
           <a class="full-list" href="projects_page/index.html">Full List of Projects
             <span class="full-list"> &#11013</span>
           </a>
-        </div>
+        </div> -->
       </div>
       <div class="user-projects" id="left-swipe" style="margin-bottom: 2%">
         <div class="images-right" style="margin-top: -2%;">
@@ -165,7 +165,7 @@
           </span>
           </h3>
           </div>
-          <p style="text-align:-webkit-auto;">
+          <p style="text-align:-webkit-auto;margin-top: -2%;">
             I created two different tools to visualize the potential effects of the Hot Hand in an R Shiny app. The first allows the user to create shot charts of NBA player efficiency changes amidst hot or cold streaks on 1.2 million shots from the 2015-21 seasons. The second is an interactive table that incoporates raw x-y tracking data on the 2014-16 seasons from SportVU, to split streaks by closest defender distances.</p>
 <!--           <a class="project-link" target="_blank" href="https://mbanalytics.shinyapps.io/Tracking-Hot-Hand/">Go to App</a>
  -->
@@ -194,9 +194,6 @@
             count = count + 1
             return; // if we added the class, exit the function
           }
-
-          // We're not intersecting, so remove the class!
-          // square.classList.remove('wave-animation');
         });
       });
 
@@ -206,9 +203,9 @@
     <!-- Scroll -->
     <script>
       ScrollReveal().reveal('.revealme', { delay: 50, easing: 'ease-in-out'});
-      ScrollReveal().reveal('.user', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '90px'});
-      ScrollReveal().reveal('#left-swipe', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '120px'});
-      ScrollReveal().reveal('#right-swipe', { delay: 60, easing: 'ease-in-out', origin: 'right', distance: '120px'});
+      ScrollReveal().reveal('.user', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '20px'});
+      ScrollReveal().reveal('#left-swipe', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '20px'});
+      ScrollReveal().reveal('#right-swipe', { delay: 60, easing: 'ease-in-out', origin: 'right', distance: '20px'});
     </script>
   </body>
 </html>

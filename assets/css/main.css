@@ -411,7 +411,7 @@ a img {
     border: 0
 }
 
-#particles-js {
+#particles-js{
     background: #232323;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #050061, #232323);
@@ -432,6 +432,7 @@ a img {
     width: 100% !important;
     height: 100vh !important
 }
+
 
 .header {
     z-index: 1;

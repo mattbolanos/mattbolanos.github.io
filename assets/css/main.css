@@ -633,16 +633,16 @@ a img {
 
 .article-text > p {
     text-align: left;
-    width: 65%;
-    margin-left: 17.5%;
+    width: 55%;
+    margin-left: 22.5%;
     color: #555555;
     font-size: 105%;
 }
 
 .article-text > h2 {
     text-align: left;
-    width: 65%;
-    margin-left: 17.5%;
+    width: 55%;
+    margin-left: 22.5%;
     color: #555555;
 }
 .article-text > span > a {
@@ -654,17 +654,16 @@ a img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 64%;
+    width: 53%;
 }
+
 
 .article-text > iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 564px;
-    margin-top: -1%;
-    margin-bottom: -1%;
+    width: 680px;
+    height: 380px;
 }
 
 

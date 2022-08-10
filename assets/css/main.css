@@ -627,11 +627,16 @@ a img {
     transform: rotate(180deg)
 }
 
+.article-text {
+    overflow: hidden;
+}
+
 .article-text > p {
     text-align: left;
     width: 65%;
     margin-left: 17.5%;
     color: #555555;
+    font-size: 105%;
 }
 
 .article-text > h2 {
@@ -657,8 +662,9 @@ a img {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    height: 564;
+    height: 564px;
     margin-top: -1%;
+    margin-bottom: -1%;
 }
 
 

@@ -14,7 +14,7 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
+    color: #333333;
     font-family: 'Karla', sans-serif;
 }
 
@@ -510,7 +510,7 @@ a img {
 
 .shaded-text {
     text-decoration: none;
-    color: #555555;
+    color: #333333;
     background-color: rgb(255, 222, 52, .5);
     cursor: pointer;
 }
@@ -603,7 +603,7 @@ a img {
     font-style:italic;
     font-size:20px;
     text-decoration: none;
-    color: #555555;
+    color: #333333;
     text-align: center;
     content: '';
     cursor: pointer;
@@ -627,26 +627,61 @@ a img {
     transform: rotate(180deg)
 }
 
-.article-text {
-    overflow: hidden;
+@media (max-width : 500px){
+    .article-text > p {
+        text-align: left;
+        width: 70%;
+        margin-left: 15%;
+        color: #333333;
+        font-size: 105%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    .article-text > h2 {
+        text-align: left;
+        width: 75%;
+        margin-left: 15%;
+        color: #333333;
+    }
+    .article-text > span > a {
+        color: #333333;
+    }
+
+    .article-text > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    .article-text > iframe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 200px
+    }
 }
 
 .article-text > p {
     text-align: left;
     width: 55%;
     margin-left: 22.5%;
-    color: #555555;
+    color: #333333;
     font-size: 105%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 .article-text > h2 {
     text-align: left;
-    width: 55%;
-    margin-left: 22.5%;
-    color: #555555;
+    width: 52%;
+    margin-left: 24%;
+    color: #333333;
 }
 .article-text > span > a {
-    color: #555555;
+    color: #333333;
 }
 
 

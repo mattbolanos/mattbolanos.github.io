@@ -302,6 +302,19 @@ template {
     }
 }
 
+.proj-icons .icon{
+    height:20px;padding:10px;border-radius:50%;border:2px solid #fff;transition:all .7s;width:20px;font-size:20px;margin:5px
+}
+.proj-icons .icon:active, .proj-icons .icon:hover{
+    color:#1a222c;
+    background:#fff
+}
+@media only screen and (min-width:550px){
+    .proj-icons .icon{
+        width:25px;height:25px;font-size:25px
+    }
+}
+
 #about{
     width:90%;margin:0 auto;max-width:960px
 }
@@ -411,6 +424,18 @@ a img {
     border: 0
 }
 
+.top-bar-proj {
+    height: 60px; 
+    background-image: url(../img/static_particles.png);
+    background-size: 100%;
+    display: block;
+    /* fallback for old browsers */
+/*    background: -webkit-linear-gradient(to right, #050061, #232323);
+*/    /* Chrome 10-25, Safari 5.1-6 */
+/*    background: linear-gradient(to right, #050061, #232323);
+*/    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 #particles-js{
     background: #232323;
     /* fallback for old browsers */
@@ -516,19 +541,22 @@ a img {
     }
 }
 
-.header-icons {
+.header-icons,
+.proj-icons {
     display: flex;
     justify-content: center;
     text-align: center
 }
 
 .down,
-.header-icons .icon {
+.header-icons .icon,
+.proj-icons .icon {
     color: #fff;
     text-align: center
 }
 
-.header-icons .icon {
+.header-icons .icon,
+.proj-icons .icon {
     height: 20px;
     padding: 10px;
     border-radius: 50%;
@@ -540,7 +568,9 @@ a img {
 }
 
 .header-icons .icon:active,
-.header-icons .icon:hover {
+.header-icons .icon:hover,
+.proj-icons .icon:active,
+.proj-icons.icon:hover {
     color: #1488CC;
     background: #fff
 }
@@ -578,12 +608,12 @@ a img {
     content: '';
     cursor: pointer;
     display: inline-block;
-    transition: all .3s ease-in
+    transition: all .12s ease-in
 }
 
 .full-list:hover{
     background-color: rgb(255, 222, 52, .5);
-    transition: all .3s ease-in;
+    transition: all .12s ease-in;
 /*    text-decoration: underline;*/
 }
 
@@ -597,6 +627,39 @@ a img {
     transform: rotate(180deg)
 }
 
+.article-text > p {
+    text-align: left;
+    width: 65%;
+    margin-left: 17.5%;
+    color: #555555;
+}
+
+.article-text > h2 {
+    text-align: left;
+    width: 65%;
+    margin-left: 17.5%;
+    color: #555555;
+}
+.article-text > span > a {
+    color: #555555;
+}
+
+
+.article-text > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64%;
+}
+
+.article-text > iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 564;
+    margin-top: -1%;
+}
 
 
 .up .icon {
@@ -755,13 +818,13 @@ a img {
 
 .project-title {
     cursor: pointer;
-    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+    transition: color .1s ease-out, background-color .1s ease-out, border-color .1s ease-out
 }
 
 .project-title:active,
 .project-title:hover{
     background-color: rgb(255, 222, 52, .5);
-    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+    transition: color .1s ease-in, background-color .1s ease-in, border-color .31 ease-in
 }
 
 .project-link {
@@ -799,6 +862,8 @@ a img {
     text-align: center;
     color: #fff
 }
+
+
 
 .footer .love {
     color: red

@@ -33,18 +33,16 @@
   </head>
 
   <body>
-    <div>
-      <a href="#particles-js" class="up" id="up" data-scroll style="animation:none;color:#232323;position:fixed;bottom:5%;right:-3%;height:20px;width:250px;">
-        <i class="icon fa fa-chevron-up" aria-hidden="true" id="upscroll"></i>
-      </a>
-    </div>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">Matt Bolaños</span>
-          <span class="site-description">Basketball & Data Science</span>
-        </h1>
-        <div class="header-icons">
+    <section>
+    <div class="top-bar-proj">
+      <br>
+      <p style="margin-top:-1%; text-align:left; color:white; font-weight:bold; font-size: 25px; margin-left: .5%;">Matt Bolaños
+        <div class="header-links" style="text-align:center;margin-top: -4%;">
+          <a class="link" href="./index.html">Home</a>
+          <a class="link" target="_blank" href="files/Matthew.Bolanos.Resume.pdf">Resume</a>
+          <a class="link" href="#projects" style="text-decoration: underline;">Projects</a>
+        </div>
+          <div class="proj-icons" style="text-align:right; justify-content: right; margin-top: -3.5%; font-size: 20px;padding: 0;">
           <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/mattbolanos/">
             <i class="icon fa fa-linkedin" aria-hidden="true"></i>
           </a>
@@ -58,81 +56,17 @@
             ><i class="icon fa fa-envelope"></i>
           </a>
         </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" target="_blank" href="files/Matthew.Bolanos.Resume.pdf">Resume</a>
-          <a class="link" href="./projects_page.html">Projects</a>
-        </div>
-      </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+      </p>
     </div>
-
-    <!-- About Section -->
-    <section id="about">
-      <hr style="height:0px; visibility:hidden;"/>
-      <!-- User Introduction-->
-      <div class="revealme">
-        <div class="user-details">
-          <h1 style="margin-top:.5em">A Bit About Me</h1>
-          <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/professional_pic.jpg"
-            width="20%"
-          />
-          <img
-            src="./assets/img/professional_pic.jpg"
-            width="20%"
-          />
-        </picture>
-      </div>
-      <div style="margin:1em 0; font-size:113%;" class="revealme">
-        <p>
-          Hi <span class="wave">&#128075</span> I'm Matt Bolaños. I currently work as a Basketball Research Analyst at Sports Info Solutions, with a B.A. in Psychology and Economics from Northwestern University.
-          I am currently pursuing a master's degree in Applied Data Science from the University of Michigan. I primarily focus on building data pipelines, R Shiny applications, 
-          and data visualizations surrounding the game of basketball. I'm passionate about learning new programming languages, and everything at the intersection of data science and basketball. Check out some of my projects <span><a href="#projects" class="shaded-text" data-scroll>below</a><a href="#projects" class="shaded-emoji" data-scroll>&#128071</a></span>
-        </p>
-      </div>
-    </div>
-      <!-- User Specifics -->
-      <div class="user">
-        <div class="tech">
-          <h2>Stack</h2>
-          <img src="./assets/img/r_proj.png" width="75px" height="75px"/>
-          <img src="./assets/img/sql_logo.png" width="75px" height="75px"/>
-          <i class="devicon-python-plain colored"></i>
-          <p>Primary languages for my side projects and day-to-day responsibilities.</p>
-        </div>
-
-        <div class="tech">
-          <h2>Experience</h2>
-          <img src="./assets/img/sis_logo.png" width="85px" height="75px">
-          <img src="./assets/img/northwestern_logo.png" width="55px" height="75px"/>
-          <img src="./assets/img/nets_logo.png" width="80px" height="80px">
-          <p>Experience working in and around various sides of basketball.</p>
-        </div>
-
-        <div class="tech">
-          <h2>Other Tools</h2>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-github-plain colored"></i>
-          <p>Main technologies for front-end styling and version control.</p>
-        </div>
-      </div>
-      </div>
-      <hr style="border-top: 1px solid #232323;">
-    </section>
-
+  </section>
+  <section>
     <!-- Projects Section -->
     <section id="projects">
       <div style="text-align:center">
-        <h1 align="center" style="margin-top:1%;">Featured Projects</h1>
-        <div style="margin-top:-1.5%; margin-bottom: 2%;">
-          <a class="full-list" href="./projects_page.html">Full List of Projects
-            <span class="full-list"> &#11013</span>
-          </a>
-        </div>
+        <h1 align="center" style="margin-top:1%;">Projects</h1>
+      </div>
+      <div>
+        <hr style="border-top: 1px solid #232323; width: 65%; margin-top: -2%; opacity: .4;">
       </div>
       <div class="user-projects" id="left-swipe" style="margin-bottom: 2%">
         <div class="images-right" style="margin-top: -2%;">
@@ -169,6 +103,42 @@
             I created two different tools to visualize the potential effects of the Hot Hand in an R Shiny app. The first allows the user to create shot charts of NBA player efficiency changes amidst hot or cold streaks on 1.2 million shots from the 2015-21 seasons. The second is an interactive table that incoporates raw x-y tracking data on the 2014-16 seasons from SportVU, to split streaks by closest defender distances.</p>
         </div>
       </div>
+      <div class="user-projects" id="left-swipe" style="margin-bottom: 2%">
+        <div class="images-right" style="margin-top: -2%;">
+            <img src="./assets/img/atos.png"/>
+        </div>
+        <div class="contents" style="text-align: center">
+          <div style="text-align: left">
+            <h3>&#128203 <span>
+              <a style="font-size:21px; text-align:left; color: #555555; margin-top: 1em; line-height: 1.25;" 
+              target="_blank" href="https://mbanalytics.shinyapps.io/Warriors-ATOs/" class="project-title">X's and O's: Golden State Warriors ATOs
+            </a>
+          </span>
+          </h3>
+          </div>
+          <p style="text-align:-webkit-auto; margin-top: -2%;">
+            Following an investigation on relationships between efficiency on after time out plays (ATOs) and NBA Playoffs success, I conducted a brief analysis on one of the most efficient ATO teams (in terms of Points per Possession) from the past decade or so: the 2016-17 Golden State Warriors. This app showcases and dissects the offensive play designs that created many a high-quality shot for them.
+          </p>
+        </div>
+      </div>
+      <div class="user-projects" id="right-swipe">
+        <div class="images-left" style="margin-top: -2.5%;">
+          <img src="./assets/img/def_distr.png"/>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <div style="text-align: left;">
+            <h3>&#127942 <span>
+              <a style="font-size:21px; text-align:left; color: #555555; margin-top: 1em; line-height: 1.25;" 
+              href="./def_page.html" class="project-title">NBA Finals 2021: Defender Distributions
+            </a>
+          </span>
+          </h3>
+          </div>
+          <p style="text-align:-webkit-auto;margin-top: -2%;">
+            I analyzed the changes in the Milwaukee Bucks' defensive scheme against Chris Paul and Devin Booker in Games 1 & 2 of the 2021 NBA Finals. Using data from the detailed box score endpoint in the NBA API, I created visualizations of the primary defender splits that Paul and Booker faced. I then brought in clips from those two games to take a deeper look at how the Paul was able to pick apart any defensive coverage thrown his way.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Import JS: Particles Theme -->
@@ -179,31 +149,10 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
-    <!-- Waving hand on wake-up -->
-    <script>
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const square = entry.target.querySelector('.wave');
-
-          var count = 0
-
-          if (entry.isIntersecting && count == 0) {
-            square.classList.add('wave-animation');
-            count = count + 1
-            return; // if we added the class, exit the function
-          }
-        });
-      });
-
-      observer.observe(document.querySelector('.revealme'));
-
-    </script>
     <!-- Scroll -->
     <script>
-      ScrollReveal().reveal('.revealme', { delay: 50, easing: 'ease-in-out'});
-      ScrollReveal().reveal('.user', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '20px'});
-      ScrollReveal().reveal('#left-swipe', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '20px'});
-      ScrollReveal().reveal('#right-swipe', { delay: 60, easing: 'ease-in-out', origin: 'right', distance: '20px'});
+      ScrollReveal().reveal('#left-swipe', { delay: 20, easing: 'ease-in-out', origin: 'left', distance: '20px'});
+      ScrollReveal().reveal('#right-swipe', { delay: 20, easing: 'ease-in-out', origin: 'right', distance: '20px'});
     </script>
   </body>
 </html>

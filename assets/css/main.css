@@ -392,10 +392,10 @@ template {
 
 
     .article-text > img{
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
-        width: 53%;
+        width: 90%;
     }
 
     .top-bar-proj {
@@ -470,6 +470,137 @@ template {
         font-weight: bold;
         text-decoration: none;
         font-size: 14px;
+        margin: 0 auto;
+        vertical-align: middle;
+        transition: all .7s;
+    }
+
+
+}
+
+@media only screen and (max-width:280px){
+
+    .article-text{
+        width: 90%; 
+        margin: 0 auto; 
+        max-width: 485px;
+    }
+
+    .article-text > iframe{
+        width: 250px; 
+        height: 157px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;
+    }
+    .article-text > p {
+        text-align: left;
+        width: 80%;
+        margin-left: 8%;
+        color: #333333;
+        font-size: 105%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    .article-text > h2 {
+        text-align: left;
+        font-size: 18px;
+        margin-left: 10%;
+        color: #333333;
+    }
+
+    .article-title {
+        text-align: center;
+        font-size: 19px;
+        font-weight: bolder;
+        color: #333333;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .article-text > span > a {
+        color: #333333;
+    }
+
+    .article-text > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .top-bar-proj {
+        height: 30px; 
+        background-image: url(../img/static_particles.png);
+        background-size: 100%;
+        position: relative;
+    }
+
+    .top-bar-proj div{
+        display: inline-block;
+        position: absolute;
+    }
+
+    .on-the-center {
+        left: 0%;
+        right: 0%;
+        vertical-align: middle;
+        text-align: center;
+        word-spacing: 0em;
+    }
+
+    .on-the-center .link {
+        color: #fff;
+        left: 0%;
+        right: 0%;
+        text-align: center;
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    .on-the-right{
+        right: .5%;
+        vertical-align: bottom;
+    }
+
+     .on-the-right .icon:hover{
+
+        color: #1488CC;
+        background: #fff
+
+    }
+
+
+    .on-the-right .icon{
+        height: 8px;
+        padding: 3px;
+        color: #fff;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        transition: all .7s;
+        width: 8px;
+        font-size: 8px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .on-the-left{
+        left: 1%;
+        z-index: 1;
+    }
+
+    .on-the-left a:hover {
+        text-decoration: underline;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .on-the-left > span > a {
+        color: white;
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12px;
         margin: 0 auto;
         vertical-align: middle;
         transition: all .7s;

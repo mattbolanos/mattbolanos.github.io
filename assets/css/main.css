@@ -434,6 +434,28 @@ template {
 /* Defender page mobile CSS*/
 @media only screen and (max-width:550px){
 
+    #top-button {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        background: 0 0;
+        border: none;
+        outline: 0;
+    /*    width: 25px;
+        height: 25px;*/
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: 3000;
+        cursor: pointer;
+        padding-right: 2%;
+        padding-bottom: 2%;
+    }
+
+    .buttonshow > img{
+        width: 20px;
+        height: 20px;
+    }
+
     .article-text{
         width: 90%; 
         margin: 0 auto; 
@@ -564,7 +586,30 @@ template {
 
 }
 
+
+
+
 @media only screen and (max-width:280px){
+
+    #top-button {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        background: 0 0;
+        border: none;
+        outline: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: 3000;
+        cursor: pointer;
+        padding-right: 2%;
+        padding-bottom: 2%;
+    }
+
+    .buttonshow > img{
+        width: 22px;
+        height: 22px;
+    }
 
     .article-text{
         width: 90%; 
@@ -1028,17 +1073,31 @@ a img {
         width: 53%;
     }
 
+    #top-button {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        background: 0 0;
+        border: none;
+        outline: 0;
+    /*    width: 25px;
+        height: 25px;*/
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: 3000;
+        cursor: pointer;
+        padding-right: 1%;
+        padding-bottom: 1%;
+    }
+
+    .buttonshow > img{
+        width: 45px;
+        height: 45px;
+    }
+
 }
 
-.up {
-    position: relative;
-    bottom: 2%;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    font-size: 30px;
-    cursor: pointer
-}
+
 
 .hideit{
     display: none;
@@ -1075,25 +1134,22 @@ a img {
 
 
 
-.up .icon {
-    position: absolute;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    fill: #fff;
+.up-button {
+/*    bottom: -5%;
+    left: 95%;
+    width: 100%;
+    position: fixed;*/
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.up .icon:active,
-.up .icon:hover{
-    color: #4b5664
-}
+
+
+
 
 .down {
     position: absolute;
-    bottom: 25px;
+    bottom: 5%;
     width: 100%;
     margin: 0 auto;
     display: block;

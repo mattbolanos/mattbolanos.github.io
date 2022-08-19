@@ -32,11 +32,6 @@
   </head>
 
   <body>
-    <div>
-      <a href="#particles-js" class="up" id="up" data-scroll style="animation:none;color:#232323;position:fixed;bottom:5%;right:-3%;height:20px;width:250px;">
-        <i class="icon fa fa-chevron-up" aria-hidden="true" id="upscroll"></i>
-      </a>
-    </div>
     <div id="particles-js">
       <div class="header">
         <h1>
@@ -168,21 +163,41 @@
         </div>
       </div>
     </section>
-
+    <div id="top-button">
+      <a class="buttonshow" href="#particles-js" data-scroll> <img src="./assets/img/up_arrow.png" 
+        alt=""> </a>
+    </div>
+<!--     <div style="position: fixed;bottom: -5%;right: 3%;font-size: 30px;" class="up-scroll-arrow" id="top-button">
+      <a href="#particles-js" data-scroll><i class="icon fa fa-chevron-up" aria-hidden="true" style="color:#232323"></i></a>
+    </div> -->
     <!-- Import JS: Particles Theme -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Import JS: Sweet Scroll -->
     <script src="./assets/js/sweet-scroll.min.js"></script>
     <!-- Import JS: Google Analytics -->
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/button-help.js"></script>
+    <script>
+      
+      $(window).scroll(function() {
+
+        var os = $('#particles-js').offset().top; // pixels to the top of div1
+        var ht = $('#particles-js').height();
+        if($(window).scrollTop() < os + ht){
+          $('.buttonshow').fadeOut();
+        } else {
+          $('.buttonshow').fadeIn();
+        }
+      });
+    </script>
     <!-- Waving hand on wake-up -->
     <script>
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const square = entry.target.querySelector('.wave');
-
           var count = 0
 
           if (entry.isIntersecting && count == 0) {
@@ -198,6 +213,9 @@
     </script>
     <!-- Scroll -->
     <script>
+
+
+
       ScrollReveal().reveal('.revealme', { delay: 50, easing: 'ease-in-out'});
       ScrollReveal().reveal('.user', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '20px'});
       ScrollReveal().reveal('#left-swipe', { delay: 50, easing: 'ease-in-out', origin: 'left', distance: '20px'});

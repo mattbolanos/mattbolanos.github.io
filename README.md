@@ -1,1 +1,1 @@
-Code for my GitHub Pages portfolio at mattbolanos.com
+Code for my GitHub Pages portfolio at https://www.mattbolanos.com/

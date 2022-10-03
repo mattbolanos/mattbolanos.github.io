@@ -1,6 +1,4 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
-@import url(https://fonts.googleapis.com/css?family=Rubik);
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 html {
@@ -322,7 +320,7 @@ template {
 .fa-inverse{color:#fff}.fa-glass:before{content:"\f000"}
 .fa-search:before{content:"\f002"}
 .fa-envelope-o:before{content:"\f003"}
-.fa-chevron-left:before{content:"\f053"}.fa-chevron-right:before{content:"\f054"}.
+.fa-chevron-left:before{content:"\f053"}.fa-chevron-right:before{content:"\f054"}.\
 .fa-mail-forward:before,.fa-share:before{content:"\f064"}
 .fa-chevron-up:before{content:"\f077"}
 .fa-chevron-down:before{content:"\f078"}
@@ -335,9 +333,9 @@ template {
 .fa-github-square:before{content:"\f092"}
 .fa-twitter:before{content:"\f099"}
 .fa-github:before{content:"\f09b"}
-.fa-link:before{content:"\f0c1"}.
+.fa-link:before{content:"\f0c1"}
 .fa-square:before{content:"\f0c8"}
-.fa-underline:before{content:"\f0cd"}.fa-table:before{content:"\f0ce"}.
+.fa-underline:before{content:"\f0cd"}.fa-table:before{content:"\f0ce"}
 .fa-envelope:before{content:"\f0e0"}
 .fa-linkedin:before{content:"\f0e1"}
 .fa-github-alt:before{content:"\f113"}

@@ -860,29 +860,30 @@ a img {
     z-index: 1;
     text-align: center;
     color: #fff;
-    position: absolute;
+    width: 100%;
     font-family: 'Karla', sans-serif;
-    top: 50%;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    position: absolute;
+    top: 45%;
     left: 50%;
-    margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .header .site-title {
-    font-size: 35.5px;
-    display: block;
-    line-height: 1;
+    font-size: 42px;
+    margin: 0 auto;
+    /* line-height: 1; */
+
     color: #fff;
 }
 
 .header .site-description {
     font-size: 17.5px;
-    display: block;
-    line-height: 1;
+    /* line-height: 1; */
     color: #fff;
-    margin-top: 3%;
-    margin-bottom: -6%;
 }
 
 .down {
@@ -895,17 +896,16 @@ a img {
     cursor: pointer
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:630px) {
 
-    .header .site-title {
-        margin: 0;
-        font-size: 100px
+    .header .site-title{
+        font-size: 95px;
     }
 
     .header .site-description {
         font-size: 40px;
-        margin-top: 1.5%;
-        margin-bottom: .5%;
+        margin-top: -7px;
+        margin-bottom: 10px;
     }
 
     .down {

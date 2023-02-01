@@ -1038,6 +1038,7 @@ a img {
 }
 
 
+
 @media only screen and (min-width:550px) {
     .header-links .link {
         font-size: 20px
@@ -1046,8 +1047,8 @@ a img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 680px;
-        height: 380px;
+        width: 447px;
+        height: 250px;
     }
 
     .article-text > p {
@@ -1111,7 +1112,17 @@ a img {
 
 }
 
+@media only screen and (min-width:700px) {
 
+    .article-text > iframe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 680px;
+        height: 380px;
+    }
+
+}
 
 .hideit{
     display: none;

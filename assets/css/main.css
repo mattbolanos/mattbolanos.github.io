@@ -373,10 +373,6 @@ template {
 .devicon-github-original-wordmark.colored{color:#f7974e}
 
 
-@media only screen and (min-width:550px){
-    .header .site-description{font-size:40px}
-}
-
 .header-icons {
     display: flex;
     justify-content: center;
@@ -874,17 +870,48 @@ a img {
 }
 
 .header .site-title {
-    font-size: 50px;
+    font-size: 35.5px;
     display: block;
     line-height: 1;
     color: #fff;
 }
 
+.header .site-description {
+    font-size: 17.5px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+    margin-top: 3%;
+    margin-bottom: -6%;
+}
+
+.down {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-size: 40px;
+    cursor: pointer
+}
+
 @media only screen and (min-width:550px) {
+
     .header .site-title {
         margin: 0;
         font-size: 100px
     }
+
+    .header .site-description {
+        font-size: 40px;
+        margin-top: 1.5%;
+        margin-bottom: .5%;
+    }
+
+    .down {
+        font-size: 50px;
+    }
+
     .top-bar-proj {
         height: 50px; 
         background-image: url(../img/static_particles.png);
@@ -968,19 +995,7 @@ a img {
 
 }
 
-.header .site-description {
-    font-size: 20px;
-    display: block;
-    line-height: 1;
-    color: #fff;
-    margin-top: 10px
-}
 
-@media only screen and (min-width:550px) {
-    .header .site-description {
-        font-size: 40px
-    }
-}
 
 
 .link:hover,
@@ -1141,19 +1156,6 @@ a img {
     cursor: pointer;
 }
 
-
-
-
-
-.down {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    font-size: 30px;
-    cursor: pointer
-}
 
 .down .icon {
     position: absolute;

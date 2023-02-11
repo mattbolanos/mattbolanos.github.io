@@ -1299,15 +1299,39 @@ a img {
     }
 }
 
+.project-image {
+    cursor: pointer;
+    color: none;
+    border: 1px solid black;
+}
+
+.project-image:active,
+.project-image:hover{
+    opacity:0.4;   
+    transition: opacity .3s ease-in; 
+    color: rgb(255, 222, 52, .5);
+}
+
 .project-title {
     cursor: pointer;
-    transition: color .1s ease-out, background-color .1s ease-out, border-color .1s ease-out
+    transition: color .1s ease-out, background-color .1s ease-out, border-color .1s ease-out;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1.5px;
 }
 
 .project-title:active,
 .project-title:hover{
     background-color: rgb(255, 222, 52, .5);
     transition: color .1s ease-in, background-color .1s ease-in, border-color .31 ease-in
+}
+
+.images-right:active,
+.images-right:hover,
+.images-left:active,
+.images-left:hover{
+    background-color: rgb(255, 222, 52, .5);
+    transition: color .1s ease-in, background-color .1s ease-in, border-color .31 ease-in;
 }
 
 .project-link {

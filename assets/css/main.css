@@ -402,7 +402,7 @@ template {
     background: #fff
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:500px) {
     .header-icons .icon {
         width: 35px;
         height: 35px;
@@ -752,6 +752,67 @@ template {
     margin: 20px;
 }
 
+.gallery-column {
+    margin-top: -2%;
+    position: relative;
+    border-radius: 8px;
+}
+
+.gallery-title {
+    font-size: 18px;
+}
+
+.gallery-column:hover {
+    background-color: #76c5f7;
+    transition: opacity .5s ease-in, background-color .5s ease-in;
+}
+
+.gallery-column:hover .gallery-img,
+.gallery-column:hover .gallery-img-tall{
+    opacity: 0.1;
+    transition: opacity .5s ease-in, background-color .5s ease-in;
+}
+
+.view-text{
+    left: 0;
+    position:absolute;
+    text-align:center;
+    vertical-align: bottom;
+    top: 35%;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0;
+    width: 100%
+}
+
+.gallery-column:hover .view-text,
+.gallery-column:active .view-text{
+    opacity: 1;
+    transition: opacity .6s ease-in;
+}
+
+.gallery-img{
+    width: 475px;
+    height: 400px;
+    cursor: pointer;
+    color: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    vertical-align: bottom;
+}
+
+.gallery-img-tall{
+    width: 475px;
+    height: 475px;
+    cursor: pointer;
+    color: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    vertical-align: bottom;
+    align-items: center;
+}
 
 .wave {
      /* Pivot around the bottom-left palm */
@@ -897,7 +958,7 @@ a img {
     cursor: pointer
 }
 
-@media only screen and (min-width:630px) {
+@media only screen and (min-width:551px) {
 
     .header .site-title{
         font-size: 95px;
@@ -1039,7 +1100,7 @@ a img {
 
 
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:500px) {
     .header-links .link {
         font-size: 20px
     }
@@ -1306,10 +1367,22 @@ a img {
 }
 
 .project-image:active,
-.project-image:hover{
+.project-image:hover,
+.gallery-img:hover,
+.gallery-img:active,
+.gallery-img-tall:hover,
+.gallery-img-tall:active{
     opacity:0.4;   
     transition: opacity .3s ease-in; 
-    color: rgb(255, 222, 52, .5);
+}
+
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .project-title {

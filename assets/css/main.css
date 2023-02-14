@@ -402,7 +402,7 @@ template {
     background: #fff
 }
 
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:700px) {
     .header-icons .icon {
         width: 35px;
         height: 35px;
@@ -426,7 +426,7 @@ template {
 }
 
 /* Defender page mobile CSS*/
-@media only screen and (max-width:550px){
+@media only screen and (max-width:699px){
 
     #top-button {
         -webkit-transition: all .2s ease-in-out;
@@ -803,17 +803,6 @@ template {
     vertical-align: bottom;
 }
 
-.gallery-img-tall{
-    width: 475px;
-    height: 475px;
-    cursor: pointer;
-    color: none;
-    border: 1px solid black;
-    border-radius: 8px;
-    vertical-align: bottom;
-    align-items: center;
-}
-
 .wave {
      /* Pivot around the bottom-left palm */
      display: inline-block;
@@ -958,7 +947,7 @@ a img {
     cursor: pointer
 }
 
-@media only screen and (min-width:551px) {
+@media only screen and (min-width:700px) {
 
     .header .site-title{
         font-size: 95px;
@@ -1375,6 +1364,34 @@ a img {
     opacity:0.4;   
     transition: opacity .3s ease-in; 
 }
+
+.gallery-heading {
+    color:rgb(94, 91, 91); 
+    margin-top:-1%
+}
+
+@media screen and (max-width: 1270px) {
+    .gallery-img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .gallery-row {
+        width: 65%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-heading {
+        font-size: 13px;
+        margin-top: -3%
+    }
+}
+
 
 .gallery-row {
     display: flex;

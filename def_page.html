@@ -67,7 +67,7 @@
         The first two games of the 2021 NBA Finals have seen Milwaukee trying many different methods of defending Phoenix’s pick and roll sets, both personnel-wise and scheme-wise. Below are the slews of different defenders that the Bucks have used against the Sun’s two primary playmakers, Chris Paul and Devin Booker.
       </p>
       <img src="./assets/img/defender_chart.png" width="90%" height="90%">
-      <p>
+      <p id="second-row">
         I did not realize <span><a style="color: #333333;" class="project-title" href="https://theathletic.com/2695157/2021/07/08/how-did-suns-scheme-beat-milwaukee-in-game-1-and-can-bucks-switch-and-better-match-up-with-chris-paul/" target="_blank">Seth Partnow</a></span> had written an article and already made a defender distribution chart from Game 1 until I had already made my own chart so I’ll post it here anyway. I want to focus on how Milwaukee went about defending Chris Paul in high ball screen situations. Game 1 featured a lot of switching from the Milwaukee defense. PJ Tucker got the first crack at Paul, to limit the advantage Deandre Ayton would have over whoever switched off of Paul. This resulted in Paul pulling it back out often and taking Brook Lopez, Ayton’s man, out into space.
       </p>
       <p style="font-style: italic;">
@@ -118,20 +118,29 @@
           height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </section>
-</body>
+  <div id="top-button">
+    <a class="buttonshow" href="#top" data-scroll> <img src="./assets/img/up_arrow.png" 
+      alt=""> </a>
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <!-- Import JS: Sweet Scroll -->
+      <script src="./assets/js/sweet-scroll.min.js"></script>
+      <!-- Import JS: Google Analytics -->
+      <script src="./assets/js/google-analytics.js"></script>
+      <!-- Import JS: Main Script -->
+      <script src="./assets/js/main.js"></script>
+      <script src="./assets/js/button-help.js"></script>
+      <script>
 
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-    <!-- Scroll -->
-    <script>
-      ScrollReveal().reveal('#left-swipe', { delay: 20, easing: 'ease-in-out', origin: 'left', distance: '20px'});
-      ScrollReveal().reveal('#right-swipe', { delay: 20, easing: 'ease-in-out', origin: 'right', distance: '20px'});
-    </script>
-  </body>
+        $(window).scroll(function() {
+  
+          var os = $('#second-row').offset().top; // pixels to the top of div1
+          if($(window).scrollTop() < os){
+            $('.buttonshow').fadeOut();
+          } else {
+            $('.buttonshow').fadeIn();
+          }
+        });
+      </script>
+</body>
 </html>

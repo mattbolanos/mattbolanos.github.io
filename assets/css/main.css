@@ -764,13 +764,13 @@ template {
 
 .gallery-column:hover {
     background-color: #76c5f7;
-    transition: opacity .5s ease-in, background-color .5s ease-in;
+    transition: opacity .3s ease-in, background-color .3s ease-in;
 }
 
 .gallery-column:hover .gallery-img,
 .gallery-column:hover .gallery-img-tall{
     opacity: 0.1;
-    transition: opacity .5s ease-in, background-color .5s ease-in;
+    transition: opacity .3s ease-in, background-color .3s ease-in;
 }
 
 .view-text{
@@ -790,7 +790,7 @@ template {
 .gallery-column:hover .view-text,
 .gallery-column:active .view-text{
     opacity: 1;
-    transition: opacity .6s ease-in;
+    transition: opacity .3s ease-in;
 }
 
 .gallery-img{

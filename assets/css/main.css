@@ -801,6 +801,8 @@ template {
     border: 1px solid black;
     border-radius: 8px;
     vertical-align: bottom;
+    object-fit: cover;
+    object-position: center;
 }
 
 .wave {
@@ -1376,6 +1378,8 @@ a img {
         height: auto;
         margin: 0 auto;
         margin-bottom: 10px;
+        object-fit: cover;
+        object-position: center;
     }
 
     .gallery-row {

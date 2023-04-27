@@ -764,7 +764,8 @@ template {
 
 .gallery-column:hover {
     background-color: #76c5f7;
-    transition: opacity .3s ease-in, background-color .3s ease-in;
+    transition: opacity .3s ease-in, background-color .2s ease-in, scale .7s ease-in;
+    transform: scale(1.02);
 }
 
 .gallery-column:hover .gallery-img,
@@ -792,6 +793,8 @@ template {
     opacity: 1;
     transition: opacity .3s ease-in;
 }
+
+  
 
 .gallery-img{
     width: 475px;

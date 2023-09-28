@@ -1,5 +1,6 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url(https://fonts.googleapis.com/css?family=Karla);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 html {
     line-height: 1.15;
@@ -545,33 +546,9 @@ template {
     content: "\f003"
 }
 
-.fa-chevron-left:before {
-    content: "\f053"
-}
-
-.fa-chevron-right:before {
-    content: "\f054"
-}
-
 .fa-mail-forward:before,
 .fa-share:before {
     content: "\f064"
-}
-
-.fa-chevron-up:before {
-    content: "\f077"
-}
-
-.fa-chevron-down:before {
-    content: "\f078"
-}
-
-.fa-folder:before {
-    content: "\f07b"
-}
-
-.fa-folder-open:before {
-    content: "\f07c"
 }
 
 .fa-arrows-v:before {
@@ -641,7 +618,6 @@ template {
 .fa-css3:before {
     content: "\f13c"
 }
-
 
 .sr-only {
     position: absolute;
@@ -826,8 +802,6 @@ template {
         background: 0 0;
         border: none;
         outline: 0;
-        /*    width: 25px;
-        height: 25px;*/
         bottom: 0;
         right: 0;
         position: fixed;
@@ -838,6 +812,11 @@ template {
     }
 
     .buttonshow>img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .buttonshow>i {
         width: 25px;
         height: 25px;
     }
@@ -993,6 +972,11 @@ template {
     }
 
     .buttonshow>img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .buttonshow>i {
         width: 23px;
         height: 23px;
     }
@@ -1213,11 +1197,8 @@ template {
 @media (prefers-reduced-motion: no-preference) {
     .wave-animation {
         animation-name: wave-animation;
-        /* Refers to the name of your @keyframes element below */
         animation-duration: 4s;
-        /* Change to speed up or slow down */
         animation-iteration-count: 1;
-        /* Never stop waving :) */
         transform-origin: 70% 70%;
     }
 }
@@ -1231,7 +1212,6 @@ template {
         transform: rotate(14.0deg) scale(1.5)
     }
 
-    /* The following five values can be played with to make the waving more or less extreme */
     20% {
         transform: rotate(-8.0deg) scale(1.5)
     }
@@ -1252,7 +1232,6 @@ template {
         transform: rotate(0.0deg)
     }
 
-    /* Reset for the last half to pause */
     100% {
         transform: rotate(0.0deg)
     }
@@ -1288,10 +1267,6 @@ h2 {
     font-size: 2rem
 }
 
-/*h3 {
-    font-size: 1.5rem
-}*/
-
 h4 {
     font-size: 1rem
 }
@@ -1317,9 +1292,9 @@ a img {
 #particles-js {
     background: #232323;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #161175, #292851);
+    background: -webkit-linear-gradient(to right, #362cff, #292851);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #161175, #292851);
+    background: linear-gradient(to right, #2f00d7, #521fbe);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: flex;
@@ -1356,14 +1331,11 @@ a img {
 .header .site-title {
     font-size: 42px;
     margin: 0 auto;
-    /* line-height: 1; */
-
     color: #fff;
 }
 
 .header .site-description {
     font-size: 17.5px;
-    /* line-height: 1; */
     color: #fff;
 }
 
@@ -1573,8 +1545,6 @@ a img {
         background: 0 0;
         border: none;
         outline: 0;
-        /*    width: 25px;
-        height: 25px;*/
         bottom: 0;
         right: 0;
         position: fixed;
@@ -1585,6 +1555,11 @@ a img {
     }
 
     .buttonshow>img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .buttonshow>i {
         width: 45px;
         height: 45px;
     }
@@ -1623,7 +1598,6 @@ a img {
 .full-list:hover {
     background-color: rgb(255, 222, 52, .5);
     transition: all .12s ease-in;
-    /*    text-decoration: underline;*/
 }
 
 .full-list>span {
@@ -1639,10 +1613,6 @@ a img {
 
 
 .up-button {
-    /*    bottom: -5%;
-    left: 95%;
-    width: 100%;
-    position: fixed;*/
     font-size: 30px;
     cursor: pointer;
 }
@@ -1915,13 +1885,9 @@ a img {
     right: 0;
     width: 100%;
     z-index: 1000;
-    /* ensures it appears on top of other content */
 }
 
-/* If you want a backdrop for the bar to improve visibility */
 .top-bar-proj {
     background-color: rgba(0, 0, 0, 0.9);
-    /* you can adjust color and opacity */
     padding: 0 10px;
-    /* optional - for some spacing */
 }

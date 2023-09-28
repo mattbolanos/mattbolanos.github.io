@@ -1292,7 +1292,7 @@ a img {
 #particles-js {
     background: #232323;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #362cff, #292851);
+    background: -webkit-linear-gradient(to right, #2f00d7, #521fbe);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2f00d7, #521fbe);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
